@@ -3,6 +3,7 @@
 /* start global style */
 html, body {
     overflow-x: hidden;
+    ont-family: "Roboto", sans-serif;
 }
 * {
     font-family: 'Poppins', sans-serif;
