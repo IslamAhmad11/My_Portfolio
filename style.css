@@ -53,122 +53,19 @@ section {
 }
 /* end global varibles */
 
-/* start header */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f0f0f0;
-    z-index: 999;
+/* Start Navbar */
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
 }
-
-@media (max-width: 767px) {
-    header {
-        padding: 10px 30px;
-    }
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
 }
-
-@media (min-width: 767px) and (max-width: 1024px) {
-    header {
-        padding: 10px 50px;
-    }
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
 }
-
-header .logo {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
-    color: var(--main-blue);
-}
-
-@media (max-width: 767px) {
-    .navigation {
-        display: none;
-    }
-}
-
-.navigation a {
-    position: relative;
-    padding-left: 30px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1em;
-    color: var(--main-blue);
-    transition: var(--main-transition);
-}
-
-.navigation a:hover {
-    color: var(--main-purple);
-}
-
-.navigation a::before { 
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    width: 0%;
-    height: 3px;
-    background-color: var(--main-blue);
-    transition: var(--main-transition);
-}
-
-.navigation a:hover::before {
-    width: 75%;
-}
-
-header .toggle-menu {
-    position: relative;
-}
-
-header .toggle-menu:hover ul {
-    width: 420px;
-    opacity: 1;
-}
-
-@media (min-width: 768px) {
-    header .toggle-menu{
-        display: none !important;
-    }
-}
-
-header .toggle-menu i {
-    font-size: 1.7em;
-    color: var(--main-blue);
-}
-
-header .toggle-menu ul {
-    width: 0px;
-    height: 270px;
-    position: absolute;
-    right: -30px;
-    top: 45px;
-    list-style: none;
-    text-align: center;
-    background-color: #f0f0f0;
-    opacity: 0;
-    transition: var(--main-transition);
-}
-
-header ul li a {
-    display: block;
-    padding: 30px;
-    margin-left: 50px;
-    text-decoration: none;
-    font-size: 1.2em;
-    color: var(--main-blue);
-    cursor: pointer;
-    transition: var(--main-transition);
-}
-
-header ul li:not(:last-child) a {
-    border-bottom: 1px solid rgb(151, 151, 151);
-}
-/* end header */
+/* End Navbar */
 
 /* start main */
 .main {
