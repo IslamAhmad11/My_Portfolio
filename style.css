@@ -55,7 +55,7 @@ section {
 
 /* Start Navbar */
 .navbar .navbar-toggler {
-  color: white;
+  color: var(--main-blue: #3a6cf4;);
   font-size: 25px;
   border-color: white;
 }
